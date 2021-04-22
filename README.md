@@ -1,27 +1,26 @@
-# WebMinim1
+# MÍNIM 1 | Frontend
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.10.
+Aquest codi conté tot el codi utilitzat per al desenvolupament del frontend del mínim 1.
 
-## Development server
+## Requisits
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Cal instal·lar varies llibreries i paquets abans de poder exectuar la app:
 
-## Code scaffolding
+1) Cal instal·lar globalment angular `npm install -g @angular/cli` o instal·lar-lo localment `npm install @angular/cli` (en aquest cas, abans de cada comanda `ng` caldrà afegir `npx`)
+2) Instal·lar totes aquelles llibreries necessaries amb: `npm install`.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Com executar l'app:
 
-## Build
+Bé com a Backend hi han dues maneres:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### Manera 1:
 
-## Running unit tests
+Mitjançant la comanda `ng start` (recalcar, que si angular no s'ha instal·lat globalment, caldrà afegir a l'inici `npx`).
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Manera 2:
 
-## Running end-to-end tests
+Mitjançant l'script `start` del package.json:
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+`~$ npm run-script start`.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+> Aquest codi ha estat totalment escrit individualment per Albert Sáez Núñez.
