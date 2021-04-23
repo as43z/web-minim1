@@ -1,0 +1,23 @@
+<body>
+    <div class="jumbotron"> <h1>REGISTRO DE SEGUIMIENTOS</h1> </div>
+    <div id='register'>
+        <form id="registerForm">
+            <input type="text" placeholder="Full Name..." required="true" #nameInput>
+            <br>
+            <input type="text" placeholder="DNI..." required="true" #dniInput>
+            <br>
+            <input type="text" placeholder="Tipo de Telefono #1 ..." required="true" #tipoTelf1Input>
+            <input type="text" placeholder="Telefono #1 ..." required="true" #telf1Input>
+            <br>
+            <input type="text" placeholder="Tipo de Telefono #2 ..." #tipoTelf2Input>
+            <input type="text" placeholder="Telefono #2 ..." #telf2Input>
+            <br>
+            <input type="checkbox" (change)="onChangeFiebre()" #fiebreInput><label>Fiebre</label>
+            <input type="checkbox" (change)="onChangePersistencia()" #persistenciaInput><label>Persistencia</label>
+            <input type="checkbox" (change)="onChangeDificultad()" #dificultadInput><label>Dificultad al respirar</label>
+            <input type="checkbox" (change)="onChangeMalestar()" #malestarInput><label>Malestar General</label>
+            <br>
+            <button type="submit" (click)="submit()"> Submit </button>
+        </form>
+    </div>
+</body>
